@@ -23,6 +23,6 @@ key = users[username]['key'] # Get the correct key
 new_key = hashlib.pbkdf2_hmac('md5', password.encode('utf-8'), salt, 100000)
 
 if key != new_key:
-    print("Password is not correct") # The keys are not the same thus the passwords were not the same
+    print("Password is not correct") 
 else:
     print("Password is correct")
